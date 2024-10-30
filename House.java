@@ -56,7 +56,15 @@ public class House extends Building {
   }
 
   public static void main(String[] args) {
-    new House();
+    House lawrence = new House("Lawrence House", "99 Green St", 4, false);
+    lawrence.moveIn("Pippa");
+    lawrence.moveIn("Pippa");
+    lawrence.moveIn("Pippa W.");
+    lawrence.moveIn("Sophie");
+    lawrence.moveIn("Jarrah");
+    lawrence.moveOut("Jarrah");
+    System.out.println(lawrence.hasDiningHall());
+    System.out.println(lawrence.nResidents());
   }
 
 }
