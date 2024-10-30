@@ -6,7 +6,7 @@ public class Cafe {
     }
     
     public static void main(String[] args) {
-        new Cafe();
+        Cafe Compass = new Cafe();
     }
     
 }
