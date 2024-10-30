@@ -51,6 +51,8 @@ public class House extends Building {
     }
   }
 
+  /* checks if a person lives in the house */
+
   public boolean isResident(String person){
     return this.residents.contains(person);
   }
