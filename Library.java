@@ -79,6 +79,8 @@ public class Library extends Building{
       return this.collection.get(title);
     }
 
+    /* prints out a list of the books currently in the collection */
+
     public void printCollection(){
       if (this.collection.isEmpty()){
         System.out.println("There are no books in this library's collection.");

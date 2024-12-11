@@ -1,8 +1,11 @@
+
 public class Building {
 
     protected String name = "<Name Unknown>";
     protected String address = "<Address Unknown>";
     protected int nFloors = 1;
+
+    /* creates a building */
 
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
@@ -13,17 +16,25 @@ public class Building {
         this.nFloors = nFloors;
     }
 
+    /* gets the name of the building */
+
     public String getName() {
         return this.name;
     }
+
+    /* gets the address of the building */
 
     public String getAddress() {
         return this.address;
     }
 
+    /* gets the number of floors in a building */
+
     public int getFloors() {
         return this.nFloors;
     }
+
+    /* combines the name, number of floors, and address to describe the building */ 
 
     public String toString() {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address;

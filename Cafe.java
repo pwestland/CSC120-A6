@@ -18,6 +18,8 @@ public class Cafe extends Building {
         System.out.println("You have built a cafe: ☕");
     }
     
+    /* sells coffee according to order, calls restock() when there isn't enough of something */
+
     public void sellCoffee(int size, int nSugarPackets, int nCreams){
         if(size > this.nCoffeeOunces){
             System.out.println("You do not have enough coffee to complete this order.");
@@ -42,6 +44,9 @@ public class Cafe extends Building {
             this.nCups -= 1;
         }
     }
+
+    /* restocks the coffee ingredients */
+
     private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups){
         this.nCoffeeOunces += nCoffeeOunces;
         this.nSugarPackets += nSugarPackets;
@@ -50,7 +55,7 @@ public class Cafe extends Building {
     }
 
     public static void main(String[] args) {
-        Cafe Compass = new Cafe("Compass Cafe", "7 Neilson Dr", 1);
+        Cafe compass = new Cafe("Compass Cafe", "7 Neilson Dr", 1);
     }
     
 }

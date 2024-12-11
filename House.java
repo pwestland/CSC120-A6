@@ -45,9 +45,8 @@ public class House extends Building {
     if (this.residents.contains(name)){
       this.residents.remove(name);
       return(name + " no longer lives in " + this.name);
-    }
-    else{
-      throw new RuntimeException(name + " does not live in " + this.name);
+    } else{
+        throw new RuntimeException(name + " does not live in " + this.name);
     }
   }
 
