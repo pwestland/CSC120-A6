@@ -5,22 +5,22 @@ import java.util.ArrayList;
 public class House extends Building {
   
   private ArrayList<String> residents;
-  private boolean hasDiningHall;
+  private boolean hasDiningRoom;
 
   /* creates the house */
 
-  public House(String name, String address, int nFloors, boolean hasDiningHall) {
+  public House(String name, String address, int nFloors, boolean hasDiningRoom) {
     super(name, address, nFloors);
     this.residents = new ArrayList<>();
-    this.hasDiningHall = hasDiningHall;
+    this.hasDiningRoom = hasDiningRoom;
     
     System.out.println("You have built a house: 🏠");
   }
   
-  /* returns whether house has a dining hall */
+  /* returns whether house has a dining room */
 
-  public boolean hasDiningHall(){
-    return this.hasDiningHall;
+  public boolean hasDiningRoom(){
+    return this.hasDiningRoom;
   }
 
   /* returns how many residents in the house */
@@ -65,7 +65,7 @@ public class House extends Building {
     lawrence.moveIn("Sophie");
     lawrence.moveIn("Jarrah");
     lawrence.moveOut("Jarrah");
-    System.out.println(lawrence.hasDiningHall());
+    System.out.println(lawrence.hasDiningRoom());
     System.out.println(lawrence.nResidents());
   }
 

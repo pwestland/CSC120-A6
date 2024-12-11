@@ -87,7 +87,7 @@ public class Library extends Building{
     }
 
     public static void main(String[] args) {
-      Library Neilson = new Library("Neilson", "7 Neilson Dr", 5);
+      Library neilson = new Library("Neilson", "7 Neilson Dr", 5);
     }
   
   }
